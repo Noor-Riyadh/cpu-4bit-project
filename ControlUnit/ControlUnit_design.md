@@ -14,6 +14,7 @@ This table shows how each instruction (Input) affects the control signals (Outpu
 | **ADD** | 0010 | X | 0 | 0 | 000 |
 | **SUB** | 0011 | X | 0 | 0 | 001 |
 | **STORE** | 0100 | X | 0 | 1 | 000 |
+|**JZ** |0101 |X |0 |0 |000 |1*
 
 ## Implementation Details
 - **Decoder:** A 4-to-16 line decoder is used to isolate each specific instruction.
