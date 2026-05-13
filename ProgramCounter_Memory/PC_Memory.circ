@@ -102,6 +102,9 @@
     <comp lib="0" loc="(420,350)" name="Constant">
       <a name="width" val="4"/>
     </comp>
+    <comp lib="0" loc="(860,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
     <comp lib="3" loc="(500,340)" name="Adder">
       <a name="width" val="4"/>
     </comp>
