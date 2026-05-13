@@ -5,9 +5,8 @@
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="PC_OUT"/>
       <a name="type" val="output"/>
-      <a name="width" val="4"/>
+      <a name="width" val="8"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
@@ -103,9 +102,6 @@
     <comp lib="0" loc="(420,350)" name="Constant">
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(860,280)" name="Pin">
-      <a name="appearance" val="classic"/>
-    </comp>
     <comp lib="3" loc="(500,340)" name="Adder">
       <a name="width" val="4"/>
     </comp>
@@ -113,7 +109,7 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="9" loc="(116,418)" name="Text">
+    <comp lib="9" loc="(115,415)" name="Text">
       <a name="text" val="Reset"/>
     </comp>
     <wire from="(170,410)" to="(300,410)"/>
