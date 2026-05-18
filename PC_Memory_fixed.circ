@@ -176,7 +176,7 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Clock1"/>
     </comp>
-    <comp lib="0" loc="(640,430)" name="Bit Extender">
+    <comp lib="0" loc="(630,420)" name="Bit Extender">
       <a name="in_width" val="3"/>
       <a name="out_width" val="4"/>
       <a name="type" val="zero"/>
@@ -187,50 +187,52 @@
     <comp lib="14" loc="(680,360)" name="CU_main">
       <a name="label" val="CU"/>
     </comp>
-    <comp lib="15" loc="(200,410)" name="RegisterFile"/>
+    <comp lib="15" loc="(170,410)" name="RegisterFile"/>
     <comp loc="(360,200)" name="ProgramCounter"/>
     <comp loc="(730,200)" name="Memory"/>
     <wire from="(100,160)" to="(120,160)"/>
     <wire from="(100,410)" to="(100,510)"/>
-    <wire from="(100,410)" to="(200,410)"/>
+    <wire from="(100,410)" to="(170,410)"/>
     <wire from="(100,510)" to="(100,750)"/>
-    <wire from="(100,510)" to="(200,510)"/>
+    <wire from="(100,510)" to="(170,510)"/>
     <wire from="(100,750)" to="(730,750)"/>
+    <wire from="(110,350)" to="(110,570)"/>
+    <wire from="(110,350)" to="(460,350)"/>
+    <wire from="(110,570)" to="(170,570)"/>
     <wire from="(120,160)" to="(120,200)"/>
     <wire from="(120,200)" to="(140,200)"/>
     <wire from="(120,220)" to="(120,280)"/>
     <wire from="(120,220)" to="(140,220)"/>
     <wire from="(120,280)" to="(140,280)"/>
+    <wire from="(120,360)" to="(120,470)"/>
+    <wire from="(120,360)" to="(450,360)"/>
+    <wire from="(120,470)" to="(170,470)"/>
     <wire from="(140,280)" to="(140,430)"/>
     <wire from="(140,430)" to="(140,530)"/>
-    <wire from="(140,430)" to="(200,430)"/>
-    <wire from="(140,530)" to="(200,530)"/>
+    <wire from="(140,430)" to="(170,430)"/>
+    <wire from="(140,530)" to="(170,530)"/>
     <wire from="(150,380)" to="(150,490)"/>
     <wire from="(150,380)" to="(680,380)"/>
-    <wire from="(150,490)" to="(200,490)"/>
-                            <wire from="(360,200)" to="(510,200)"/>
+    <wire from="(150,490)" to="(170,490)"/>
+    <wire from="(360,200)" to="(510,200)"/>
                     <wire from="(480,290)" to="(480,370)"/>
     <wire from="(480,290)" to="(730,290)"/>
     <wire from="(480,370)" to="(680,370)"/>
-    <wire from="(580,360)" to="(580,430)"/>
-    <wire from="(580,360)" to="(680,360)"/>
-    <wire from="(580,430)" to="(600,430)"/>
-    <wire from="(640,430)" to="(680,430)"/>
-    <wire from="(640,490)" to="(640,640)"/>
-    <wire from="(640,490)" to="(680,490)"/>
-    <wire from="(640,640)" to="(680,640)"/>
-    <wire from="(680,430)" to="(680,490)"/>
+    <wire from="(560,360)" to="(560,420)"/>
+    <wire from="(560,360)" to="(680,360)"/>
+    <wire from="(560,420)" to="(590,420)"/>
+    <wire from="(630,420)" to="(650,420)"/>
+    <wire from="(650,420)" to="(650,640)"/>
+    <wire from="(650,640)" to="(680,640)"/>
     <wire from="(710,640)" to="(730,640)"/>
     <wire from="(730,200)" to="(730,290)"/>
     <wire from="(730,640)" to="(730,750)"/>
-    <comp lib="0" loc="(650,610)" name="Constant">
-      <a name="width" val="4"/>
-    </comp>
-    <wire from="(650,610)" to="(680,610)"/>
-    <wire from="(640,470)" to="(700,470)"/>
-    <wire from="(700,470)" to="(700,620)"/>
-    <wire from="(700,620)" to="(710,620)"/>
-    <wire from="(640,490)" to="(710,490)"/>
-    <wire from="(710,490)" to="(710,620)"/>
+    <wire from="(590,420)" to="(630,420)"/>
+    <wire from="(480,450)" to="(600,450)"/>
+    <wire from="(600,450)" to="(600,620)"/>
+    <wire from="(600,620)" to="(680,620)"/>
+    <wire from="(480,510)" to="(610,510)"/>
+    <wire from="(610,510)" to="(610,630)"/>
+    <wire from="(610,630)" to="(680,630)"/>
   </circuit>
 </project>
