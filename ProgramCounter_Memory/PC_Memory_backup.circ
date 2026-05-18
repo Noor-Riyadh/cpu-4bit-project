@@ -172,6 +172,11 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="RESET"/>
     </comp>
+    <comp lib="0" loc="(1050,470)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="C_FLAG"/>
+      <a name="type" val="output"/>
+    </comp>
     <comp lib="0" loc="(120,280)" name="Clock">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Clock1"/>
@@ -181,8 +186,15 @@
       <a name="out_width" val="4"/>
       <a name="type" val="one"/>
     </comp>
-    <comp lib="0" loc="(740,500)" name="Constant">
-      <a name="value" val="0x0"/>
+    <comp lib="0" loc="(760,440)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="O_FLAG"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(880,430)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Z_FLAG"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="13" loc="(710,620)" name="ALU">
       <a name="label" val="ALU_Circuit"/>
@@ -199,6 +211,8 @@
     <wire from="(100,510)" to="(100,660)"/>
     <wire from="(100,510)" to="(170,510)"/>
     <wire from="(100,660)" to="(730,660)"/>
+    <wire from="(1050,470)" to="(1070,470)"/>
+    <wire from="(1070,470)" to="(1070,630)"/>
     <wire from="(110,350)" to="(110,570)"/>
     <wire from="(110,350)" to="(460,350)"/>
     <wire from="(110,570)" to="(170,570)"/>
@@ -238,12 +252,19 @@
     <wire from="(630,420)" to="(650,420)"/>
     <wire from="(650,420)" to="(650,640)"/>
     <wire from="(650,640)" to="(680,640)"/>
+    <wire from="(690,500)" to="(690,610)"/>
+    <wire from="(690,500)" to="(780,500)"/>
     <wire from="(700,560)" to="(700,610)"/>
-    <wire from="(700,560)" to="(770,560)"/>
+    <wire from="(700,560)" to="(870,560)"/>
+    <wire from="(710,620)" to="(930,620)"/>
     <wire from="(710,640)" to="(730,640)"/>
     <wire from="(730,200)" to="(730,290)"/>
     <wire from="(730,640)" to="(730,660)"/>
-    <wire from="(740,500)" to="(770,500)"/>
-    <wire from="(770,500)" to="(770,560)"/>
+    <wire from="(760,440)" to="(780,440)"/>
+    <wire from="(780,440)" to="(780,500)"/>
+    <wire from="(870,560)" to="(870,630)"/>
+    <wire from="(870,630)" to="(1070,630)"/>
+    <wire from="(880,430)" to="(930,430)"/>
+    <wire from="(930,430)" to="(930,620)"/>
   </circuit>
 </project>
