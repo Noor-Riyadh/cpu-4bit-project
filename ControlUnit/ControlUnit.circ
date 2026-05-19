@@ -77,6 +77,7 @@
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
     </comp>
+    <comp lib="0" loc="(350,80)" name="Ground"/>
     <comp lib="0" loc="(520,80)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="INSTRUCTION"/>
@@ -99,16 +100,22 @@
     <wire from="(330,130)" to="(330,180)"/>
     <wire from="(330,180)" to="(360,180)"/>
     <wire from="(330,40)" to="(360,40)"/>
+    <wire from="(330,50)" to="(350,50)"/>
+    <wire from="(330,60)" to="(350,60)"/>
+    <wire from="(350,50)" to="(350,60)"/>
+    <wire from="(350,60)" to="(350,80)"/>
     <wire from="(360,110)" to="(360,180)"/>
     <wire from="(360,110)" to="(600,110)"/>
     <wire from="(360,180)" to="(380,180)"/>
     <wire from="(360,40)" to="(360,50)"/>
     <wire from="(360,50)" to="(620,50)"/>
     <wire from="(380,170)" to="(380,180)"/>
-    <wire from="(380,170)" to="(410,170)"/>
+    <wire from="(380,170)" to="(390,170)"/>
     <wire from="(390,130)" to="(390,160)"/>
     <wire from="(390,130)" to="(510,130)"/>
     <wire from="(390,160)" to="(410,160)"/>
+    <wire from="(390,170)" to="(390,180)"/>
+    <wire from="(390,180)" to="(410,180)"/>
     <wire from="(440,170)" to="(450,170)"/>
     <wire from="(450,170)" to="(450,230)"/>
     <wire from="(510,120)" to="(510,130)"/>

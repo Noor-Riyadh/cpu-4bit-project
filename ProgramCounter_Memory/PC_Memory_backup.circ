@@ -5,6 +5,8 @@
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
@@ -19,9 +21,11 @@
   <lib desc="#BFH-Praktika" name="10"/>
   <lib desc="#Input/Output-Extra" name="11"/>
   <lib desc="#Soc" name="12"/>
-  <lib desc="file#..\ALU\ALU.circut.circ" name="13"/>
-  <lib desc="file#..\ControlUnit\ControlUnit.circ" name="14"/>
-  <lib desc="file#..\Registers\Registers.circ" name="15"/>
+  <lib desc="file#..\Registers\Registers.circ" name="13"/>
+  <lib desc="file#..\ALU\ALU.circut.circ" name="14"/>
+  <lib desc="file#..\ControlUnit\ControlUnit.circ" name="15"/>
+  <lib desc="file#..\BonusFeatures\JumpInstruction\Jump.circ..circ" name="16"/>
+  <lib desc="file#..\BonusFeatures\8bit_Upgrade\PC_8bit.circ" name="17"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -196,13 +200,13 @@
       <a name="label" val="Z_FLAG"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="13" loc="(710,620)" name="ALU">
+    <comp lib="13" loc="(170,410)" name="RegisterFile"/>
+    <comp lib="14" loc="(710,620)" name="ALU">
       <a name="label" val="ALU_Circuit"/>
     </comp>
-    <comp lib="14" loc="(680,360)" name="CU_main">
+    <comp lib="15" loc="(680,360)" name="CU_main">
       <a name="label" val="CU"/>
     </comp>
-    <comp lib="15" loc="(170,410)" name="RegisterFile"/>
     <comp loc="(360,200)" name="ProgramCounter"/>
     <comp loc="(730,200)" name="Memory"/>
     <wire from="(100,160)" to="(120,160)"/>
