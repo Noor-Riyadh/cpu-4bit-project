@@ -81,7 +81,7 @@ The computational core of the CPU. Built with two subcircuits:
 
 ---
 
-### 📦 Register File — Hala
+### 📦 Register File 
 Two 4-bit registers built using **D flip-flops**:
 - **Register A** — Stores first operand
 - **Register B** — Stores second operand
@@ -90,7 +90,7 @@ Two 4-bit registers built using **D flip-flops**:
 
 ---
 
-### 🧠 Control Unit — Rawan
+### 🧠 Control Unit 
 Decodes 4-bit instructions into control signals:
 - Uses a **decoder** to identify instruction type
 - Generates: ALU_OP, REG_LOAD, REG_SELECT, MEM_WRITE
@@ -98,7 +98,7 @@ Decodes 4-bit instructions into control signals:
 
 ---
 
-### 🔢 Program Counter + Memory — Nada
+### 🔢 Program Counter + Memory 
 - **PC** auto-increments each clock cycle using an adder
 - **RESET** returns PC to 0000
 - **ROM (16×4)** stores up to 16 instructions
@@ -130,13 +130,13 @@ Decodes 4-bit instructions into control signals:
 
 ## ⭐ Bonus Features
 
-### 1. Flag Register (Manar)
+### 1. Flag Register 
 - **Zero Flag (Z)** → Set to 1 when ALU result = 0000
 - **Carry Flag (C)** → Set to 1 when addition overflows
 - Both flags visible as output pins in main_cpu
 - Enables conditional operations
 
-### 2. Jump Instruction — JZ (Rawan)
+### 2. Jump Instruction — JZ 
 - New instruction `0101` = Jump If Zero
 - AND gate combines JZ detection + Z_FLAG
 - JUMP_ENABLE output activates when Z=1 and instruction=0101
@@ -148,65 +148,13 @@ Decodes 4-bit instructions into control signals:
 | 0101 (JZ) | 1 | 1 | Jump to new address |
 | Other | Any | 0 | No jump |
 
-### 3. 8-bit PC Upgrade (Nada)
+### 3. 8-bit PC Upgrade 
 - Extends Program Counter from **4-bit to 8-bit**
 - Supports **256 instructions** instead of 16
 - Wider register, adder, and ROM address bus
 - File: `BonusFeatures/8bit_Upgrade/PC_8bit.circ`
 
-### 4. 7-Segment Display (Hala)
-- Connects REG_A_OUT to a Hex Digit Display
-- Shows Register A value as readable hex (0-9, A-F)
-- Example: REG_A = 1010 → Display shows 'A'
-
 ---
-
-
-```
-cpu-4bit-project/
-│
-├── 📄 README.md                          ← You are here
-│
-├── 🔧 ALU/                               ← Manar's work
-│   ├── ALU.circut.circ                   ← Main ALU circuit
-│   ├── ALU_truth_table.md                ← Truth table documentation
-│   ├── README.md
-│   └── screenshots/
-│
-├── 📦 Registers/                         ← Hala's work
-│   ├── Registers.circ                    ← Register File circuit
-│   ├── Registers_design.md
-│   ├── README.md
-│   └── screenshots/
-│
-├── 🧠 ControlUnit/                       ← Rawan's work
-│   ├── ControlUnit.circ                  ← Control Unit circuit
-│   ├── Jump.circ                         ← Bonus: JZ instruction
-│   ├── ControlUnit_design.md
-│   ├── README.md
-│   └── screenshots/
-│
-├── 🔢 ProgramCounter_Memory/            ← Nada's work
-│   ├── PC_Memory.circ                    ← Main integrated CPU file
-│   ├── PC_Memory_design.md
-│   ├── README.md
-│   └── screenshots/
-│
-├── 👑 Integration_Report/               ← Noor's work
-│   ├── report_draft.md
-│   └── final_screenshots/
-│
-└── ⭐ BonusFeatures/
-    ├── FlagRegister/                     ← Manar's bonus
-    ├── JumpInstruction/                  ← Rawan's bonus
-    │   └── Jump.circ
-    ├── 8bit_Upgrade/                     ← Nada's bonus
-    │   └── PC_8bit.circ
-    └── SevenSegmentDisplay/              ← Hala's bonus
-```
-
----
-
 ## 🚀 How to Run
 
 ### Prerequisites
